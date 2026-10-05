@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class = "seccion-info">
+        <table>
+            <tr>
+              <th>Moneda</th>
+              <th>Compra</th>
+              <th>Venta</th>
+            </tr>
+            <tr>
+              <td>Dólar</td>
+              <td>1485</td>
+              <td>1535</td>
+            </tr>
+            <tr>
+              <td>Euro</td>
+              <td>1710</td>
+              <td>1810</td>
+            </tr>
+            <tr>
+              <td>Real (c/100 unidades)</td>
+              <td>28300</td>
+              <td>30500</td>
+            </tr>
+            <tr>
+              <td>Boliviano</td>
+              <td>160</td>
+              <td>180</td>
+            </tr>
+        </table>
+        <iframe src="https://api.wo-cloud.com/content/widget/?geoObjectKey=9213952&language=es&region=AR&timeFormat=HH:mm&windUnit=kmh&systemOfMeasurement=metric&temperatureUnit=celsius" name="CW2" scrolling="no" width="180" height="125" frameborder="0" style="border: 1px solid #10658E;border-radius: 10px"></iframe>
+        </section>
+        <div style="text-align: left; margin: 1px;">
+            <button id="theme-toggle">Modo Oscuro</button>
+            <button id="botonCambiar">Cambiar texto</button>
+        </div>
+        <header><h1 id="titulo">Quebrada de Humahuaca</h1></header>
+        
+        
+        <img src="images/Diseño sin título (1).png" alt="Quebrada de Humahuaca" class="img-principal">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#Puntos de interes">Puntos de interes</a></li>
+                <li><a href="#Gastronomía">Gastronomía</a></li>
+                <li><a href="#Museos">Museos</a></li>
+                <li><a href="#Teléfonos útiles">Teléfonos útiles</a></li>
+            </ul>
+        </nav>
+        <hr>
+        
+        <p class="descripcion">
+            Aquí encontrarás información sobre puntos de interes, gastronomia, paseos y más.
+        </p><button id="disminuir">A-</button><button id="normal">A</button><button id="aumentar">A+</button>
+        
+        
+      
+        <section class="seccion-cards">
+            <h2 id="Puntos de interes">Puntos de interes</h2>
+            <article class="card">
+                <header>
+                    <h3>Salinas Grandes</h3>
+                </header>
+                <img src="images/salinas.jfif" class="img-card">
+                <p class="oculto">A 92 km de Tilcara. Accediendo por Purmamarca.<a href=" " target="_blank">Más info</a></p>
+                
+                <button class = "btn-ver-mas">[ Ver más ]</button>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3>Cerro de los Siete Colores</h3>
+                </header>
+                <img src="images/purmamarca.jpg" class="img-card">
+                
+                <p class="oculto">A 30 min al sur de Tilcara <a href=" " target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[ Ver más ]</button>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3>Pucará de Tilcara</h3>
+                </header>
+                <img src="images/pucara.jfif" class="img-card">
+               
+                <p class="oculto">Cruzando el puente de hierro <a href="https://share.google/YmcrCHyrTNvQQkcR5" target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[ Ver más ]</button>
+            </article>
+        
+            <article class="card">
+                <header>
+                    <h3>Hornocal</h3>
+                </header>
+                <img src="images/hornocal huma.jpg" class="img-card">
+               
+                <p class="oculto">A 2 horas al norte de Tilcara <a href=" " target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[ Ver más ]</button>
+            </article>
+            <article class="card">
+                <header>
+                    <h3>Tren Solar de La Quebrada</h3>
+                </header>
+                <img src="images/tren solar.jpg" class="img-card">
+                
+                <p class="oculto">Recorre gran parte de la quebrada. Desde Volcán hasta Tilcara  <a href=" " target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[Ver más]</button>
+            </article>
+        </section>
+        <hr>
+
+        <section class="seccion-cards">
+            <h2 id="Gastronomía">Gastronomía</h2>
+            <article class="card">
+                <header>
+                    <h3>Bien Me Sabe</h3>
+                </header>
+                <img src="images/bien me sabe.jpg" class="img-card">
+                
+                <p class="oculto">Ubicado en calle Lavalle 655. <a href=" " target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[ Ver más ]</button>
+            </article>  
+            
+            <article class="card">
+                <header>
+                    <h3>Restaurante Azul</h3>
+                </header>
+                <img src="images/restaurante azul.jpg" class="img-card">
+                
+                <p class="oculto">Ubicado en calle Lavalle 486. <a href=" " target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[ Ver más ]</button>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3>El Nuevo Progreso</h3>
+                </header>
+                <img src="images/nuevo progreso.jpg" class="img-card">
+                
+                <p class="oculto"> Ubicado en esquina Belgrano y Bolivar. <a href=" " target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[ Ver más ]</button>
+            </article>
+        </section>
+        <hr>
+
+        <section class="seccion-cards">
+            <h2 id="Museos">Museos</h2>
+            <article class="card">
+                <header>
+                    <h3>Museo Terry</h3>
+                </header>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvr4yLIKdSvFVeOpNYWz_eSliHfCvIXSfrZyQh24j9kw&s=10" class="img-card">
+                
+                <p class="oculto">Se encuentra ubicado en la calle Rivadavia 352, de la ciudad de Tilcara, provincia de Jujuy. <a href="https://share.google/e3mazhZTyS2KiIU5H" target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[ Ver más ]</button>
+            </article>  
+            
+            <article class="card">
+                <header>
+                    <h3>Museo Arquelogico</h3>
+                </header>
+                <img src="https://pueblosoriginarios.com/sur/andina/noa/museos/casanova/archivos/museo.jpg" class="img-card">
+                
+                <p class="oculto"> Ubicado frente a la Plaza en el centro de Tilcara. <a href="https://share.google/zRqTsq91woTtlvODh" target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[ Ver más ]</button>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3>Museo Arquelogico</h3>
+                </header>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/a4/50/3c/frente-del-museo.jpg?w=1200&h=1200&s=1" class="img-card">
+                
+                <p class="oculto"> Ubicado en esquina Belgrano y Bolivar. <a href="https://share.google/LyvH3YzcU5RCOvYpi" target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[ Ver más ]</button>
+            </article>
+        </section>
+        <hr>
+
+        <form id="formulario">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" placeholder="Juan Pérez"></input>
+
+                <label for="email">e-mail: </label>
+                <input type="email" id="email" placeholder="juanperez@gmail.com"></input>
+
+                <label for="fecnac">Fecha de nacimiento: </label>
+                <input type="date" id="fecnac"></input>
+
+
+                <label for="mensaje">Mensaje: </label>
+                <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." ></textarea>
+
+                <button type="submit">Enviar y calcular edad</button>
+
+                <p id="resultado"></p>
+                <p id="infoedad"></p>
+
+        </form>
+
+        <section>
+            <h3 id="Teléfonos útiles">Teléfonos útiles</h3>    
+            <ul>
+                <li>Hospital: 123</li>
+                <li>Policia: 123</li>
+                <li>Oficina de Información Turistica: 123</li>
+            </ul> 
+        </section>
+
+        <footer>Monoambiente Tilcara - Tilcara, Jujuy 2026</footer>
+    </main>    
+</body>
+</html>
