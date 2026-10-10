@@ -51,7 +51,13 @@
         <iframe src="https://api.wo-cloud.com/content/widget/?geoObjectKey=9213952&language=es&region=AR&timeFormat=HH:mm&windUnit=kmh&systemOfMeasurement=metric&temperatureUnit=celsius" name="CW2" scrolling="no" width="180" height="125" frameborder="0" style="border: 1px solid #10658E;border-radius: 10px"></iframe>
         </section> -->
         
-        <header><h1 id="titulo">Quebrada de Humahuaca</h1></header>
+        <header>
+            <h1 id="titulo">Quebrada de Humahuaca</h1>
+             <div class="btns-nav">
+                <button type="button" id="theme-toggle-nav"><img src="images/dark mode.png" alt="Modo Oscuro"></button>
+                <button id="botonCambiar">Cambiar texto</button>
+             </div>    
+        </header>
         <img class="img-principal" src="images/portada2.png" alt="Quebrada de Humahuaca">
         <nav class="navbar">
             <ul class="nav-links">
@@ -109,16 +115,18 @@
 
          </section>
          
-        <div class="btns-nav">
-                    <button type="button" id="theme-toggle-nav"><img src="images/dark mode.png" alt="Modo Oscuro"></button>
-                    <button id="botonCambiar">Cambiar texto</button>
-        </div>
+       
         <hr>
         
         <p class="descripcion">
             Aquí encontrará información sobre lugares de interes para conocer, museos, gastronomia, paseos y más.
-        </p><button id="disminuir">A-</button><button id="normal">A</button><button id="aumentar">A+</button>
-        
+        </p>
+        <div class="btns-font-size">
+            <button id="disminuir">A-</button>
+            <button id="normal">A</button>
+            <button id="aumentar">A+</button>
+        </div>
+
         <button id="theme-toggle"><img src="images/dark_mode.svg" style="width: 100%; height: 100%;"></button>
         <button id="volverArriba">Volver arriba</button>
         
@@ -127,7 +135,7 @@
         <section class="seccion-cards">
             
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>Salinas Grandes</h3>
                 </header>
                 <img src="images/salinas.jfif" class="img-card">
@@ -137,7 +145,7 @@
             </article>
 
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>Cerro de los Siete Colores</h3>
                 </header>
                 <img src="images/purmamarca.jpg" class="img-card">
@@ -147,7 +155,7 @@
             </article>
 
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>Pucará de Tilcara</h3>
                 </header>
                 <img src="images/pucara.jfif" class="img-card">
@@ -157,7 +165,7 @@
             </article>
 
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>Garganta de Diablo</h3>
                 </header>
                 <img src="images/cascada-garganta-del-diablo.jpg" class="img-card">
@@ -167,7 +175,7 @@
             </article>
         
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>Hornocal</h3>
                 </header>
                 <img src="images/hornocal huma.jpg" class="img-card">
@@ -177,7 +185,7 @@
             </article>
 
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>Quebrada de las Señoritas</h3>
                 </header>
                 <img src="images/quebrada de las señoritas1.jpg" class="img-card">
@@ -187,7 +195,7 @@
             </article>
 
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>Tren Solar de La Quebrada</h3>
                 </header>
                 <img src="images/tren solar.jpg" class="img-card">
@@ -202,7 +210,7 @@
         <section class="seccion-cards">
             
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>Museo Terry</h3>
                 </header>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvr4yLIKdSvFVeOpNYWz_eSliHfCvIXSfrZyQh24j9kw&s=10" class="img-card">
@@ -212,7 +220,7 @@
             </article>  
             
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>Museo Arquelogico</h3>
                 </header>
                 <img src="https://pueblosoriginarios.com/sur/andina/noa/museos/casanova/archivos/museo.jpg" class="img-card">
@@ -222,7 +230,7 @@
             </article>
 
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>Museo Soto Avendaño</h3>
                 </header>
                 <img src="images/museo soto avendaño.jfif" class="img-card">
@@ -232,7 +240,7 @@
             </article>
 
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>Museo Arquelogico</h3>
                 </header>
                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/a4/50/3c/frente-del-museo.jpg?w=1200&h=1200&s=1" class="img-card">
@@ -247,7 +255,7 @@
         <section class="seccion-cards">
             
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>Los Puestos</h3>
                 </header>
                 <img src="images/los puestos.jpg" class="img-card">
@@ -257,7 +265,7 @@
             </article>
 
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>Bien Me Sabe</h3>
                 </header>
                 <img src="images/bien me sabe.jpg" class="img-card">
@@ -267,7 +275,7 @@
             </article>  
             
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>Restaurante Azul</h3>
                 </header>
                 <img src="images/restaurante azul.jpg" class="img-card">
@@ -277,7 +285,7 @@
             </article>
 
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>El Nuevo Progreso</h3>
                 </header>
                 <img src="images/nuevo progreso.jpg" class="img-card">
@@ -287,7 +295,7 @@
             </article>
 
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>La Pea de Chuspita</h3>
                 </header>
                 <img src="images/la peña de chuspita.jpg" class="img-card">
@@ -297,7 +305,7 @@
             </article>
 
             <article class="card">
-                <header>
+                <header class="header-cards">
                     <h3>El Molle</h3>
                 </header>
                 <img src="images/el molle.jfif" class="img-card">

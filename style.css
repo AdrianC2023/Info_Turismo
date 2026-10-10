@@ -30,24 +30,30 @@ body{
     padding: 1px;
     left: 1px;
     margin: 1px;
-}
-
-#titulo{
-    color: brown;
-    font-size: 60px;
+    display: grid;
     
+}
+header{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    background-color: rgb(134, 90, 24);
+}
+#titulo{
+    color: rgb(202, 175, 162);
+    font-size: 60px;
     font-family: "Cormorant Garamond", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-
     text-align: center;
-    background-color: rgb(235, 86, 111);
+    /* background-color: rgb(146, 85, 6); */
     margin: 0px;
 }
 .img-principal {
     width: 100%;
-    height: 10%;
+    height: 100
+    %;
     margin-bottom: 0%;
 
 }
@@ -89,6 +95,7 @@ body{
     gap: 5px;
     justify-content:right;
     font-family: var(--font-principal);
+    
 }
 .btns-nav img{
     width: 100%;
@@ -96,7 +103,7 @@ body{
 }
 
 a:hover{
-    color: red;
+    color: rgb(170, 100, 50);
     cursor:pointer;
 }
 .seccion-info{
@@ -129,6 +136,7 @@ table{
     align-items: center;
     display: flex;
     font-family: var(--font-principal);
+    flex-wrap: wrap;
     
 }
 
@@ -196,6 +204,10 @@ table{
     text-align: left;
     color: var(--text-color);
     font-family: var(--font-principal);
+}
+
+.header-cards {
+    background-color: rgba(210, 105, 30, 0)
 }
 
 .card{
@@ -271,6 +283,14 @@ button{
     padding:5px;
     margin-top: 20px;
     font-family: var(--font-principal);
+}
+.btns-font-size {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    justify-content:space-between;
+    display: grid;
+        grid-auto-flow: column;
 }
 
 #volverArriba {
