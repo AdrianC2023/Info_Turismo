@@ -200,7 +200,7 @@ table{
 }
 
 .seccion-cards {
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 }
 
@@ -228,7 +228,7 @@ table{
 
 .card{
 
-    padding: 8px;
+    padding-bottom: 150px;
     margin-top: 10px;
 
     /* align-items: center; */
@@ -279,6 +279,7 @@ textarea{
 .btn-ver-mas{
     
     font-family: var(--font-principal);
+    z-index: 999;
 }
 
 #theme-toggle-nav {
