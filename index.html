@@ -6,10 +6,21 @@
     <title>Turismo</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+    </style>
 </head>
 <body>
-    <main>
-        <section class = "seccion-info">
+
+    <section class="portada">
+        <div class="portada-contenido">
+            <h2>Recorre La Quebrada</h2>
+            <p>Conoce el norte argentino</p>
+        </div>
+    </section>
+
+    <!-- <main> -->
+        <!-- <section class = "seccion-info">
         <table>
             <tr>
               <th>Moneda</th>
@@ -38,33 +49,83 @@
             </tr>
         </table>
         <iframe src="https://api.wo-cloud.com/content/widget/?geoObjectKey=9213952&language=es&region=AR&timeFormat=HH:mm&windUnit=kmh&systemOfMeasurement=metric&temperatureUnit=celsius" name="CW2" scrolling="no" width="180" height="125" frameborder="0" style="border: 1px solid #10658E;border-radius: 10px"></iframe>
-        </section>
-        <div style="text-align: left; margin: 1px;">
-            <button id="theme-toggle">Modo Oscuro</button>
-            <button id="botonCambiar">Cambiar texto</button>
-        </div>
+        </section> -->
+        
         <header><h1 id="titulo">Quebrada de Humahuaca</h1></header>
-        
-        
-        <img src="images/Diseño sin título (1).png" alt="Quebrada de Humahuaca" class="img-principal">
+        <img class="img-principal" src="images/portada2.png" alt="Quebrada de Humahuaca">
         <nav class="navbar">
             <ul class="nav-links">
-                <li><a href="#Puntos de interes">Puntos de interes</a></li>
-                <li><a href="#Gastronomía">Gastronomía</a></li>
+                <li><a href="#Lugares-de-interés">Lugares de interés</a></li>
                 <li><a href="#Museos">Museos</a></li>
-                <li><a href="#Teléfonos útiles">Teléfonos útiles</a></li>
+                <li><a href="#Gastronomía">Gastronomía</a></li>
+                <li><a href="#Viñedos">Viñedos</a></li>
+                <li><a href="#Oficina_de_Información_Turistica">Oficina de Información Turística</a></li>
             </ul>
         </nav>
+        <!-- Carrousel -->
+         <section class="carrousel-section">
+            <h2>Paisajes</h2>
+            <div class="carrousel-container" id="carrousel">
+                <!-- Diapositivas -->
+                <div class="carrousel-slides">
+                    <div class="slide active">
+                        <img src="images/hornocal huma.jpg" alt="Hornocal" class="img-carrousel">
+                        <div class="carrousel-caption">
+                            <h3>Hornocal</h3>
+                            <p>Humahuaca, Jujuy</p>
+                        </div>
+                </div>
+                <div class="slide">
+                    <img src="images/purmamarca.jpg" alt="Cerro 7 Colores" class="img-carrousel">
+                    <div class="carrousel-caption">
+                        <h3>Cerro de los 7 Colores</h3>
+                          <p>Purmamarca, Jujuy</p>
+                     </div>
+                </div>
+                <div class="slide">
+                    <img src="images/salinas.jfif" alt="Salinas Grandes" class="img-carrousel">
+                    <div class="carrousel-caption">
+                        <h3>Salina Grandes</h3>
+                        <p>Cochinoca, Jujuy</p>
+                    </div>                    </div>
+                <div class="slide">
+                    <img src="images/pucara.jfif" alt="Salinas Grandes" class="img-carrousel">
+                    <div class="carrousel-caption">
+                        <h3>Pucará</h3>
+                        <p>Tilcara, Jujuy</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/tren solar.jpg" alt="Tren Solar de La Quebrada" class="img-carrousel">
+                    <div class="carrousel-caption">
+                        <h3>Tren Solar de La Quebrada</h3>
+                        <p>Quebrada de Humahuaca</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Btns de nav. -->
+            <button class="carrousel-btn prev" id="prevBtn" aria-label="Imagen anterior">&#10094;</button>
+            <button class="carrousel-btn next" id="nextBtn" aria-label="Siguiente imagen">&#10095;</button>
+
+         </section>
+         
+        <div class="btns-nav">
+                    <button type="button" id="theme-toggle-nav"><img src="images/dark mode.png" alt="Modo Oscuro"></button>
+                    <button id="botonCambiar">Cambiar texto</button>
+        </div>
         <hr>
         
         <p class="descripcion">
-            Aquí encontrarás información sobre puntos de interes, gastronomia, paseos y más.
+            Aquí encontrará información sobre lugares de interes para conocer, museos, gastronomia, paseos y más.
         </p><button id="disminuir">A-</button><button id="normal">A</button><button id="aumentar">A+</button>
         
+        <button id="theme-toggle"><img src="images/dark_mode.svg" style="width: 100%; height: 100%;"></button>
+        <button id="volverArriba">Volver arriba</button>
         
-      
+        
+        <h2 id="Lugares-de-interés">Lugares de interés</h2>
         <section class="seccion-cards">
-            <h2 id="Puntos de interes">Puntos de interes</h2>
+            
             <article class="card">
                 <header>
                     <h3>Salinas Grandes</h3>
@@ -72,7 +133,7 @@
                 <img src="images/salinas.jfif" class="img-card">
                 <p class="oculto">A 92 km de Tilcara. Accediendo por Purmamarca.<a href=" " target="_blank">Más info</a></p>
                 
-                <button class = "btn-ver-mas">[ Ver más ]</button>
+                <button class = "btn-ver-mas">[Ver más]</button>
             </article>
 
             <article class="card">
@@ -82,7 +143,7 @@
                 <img src="images/purmamarca.jpg" class="img-card">
                 
                 <p class="oculto">A 30 min al sur de Tilcara <a href=" " target="_blank">Más info</a></p>
-                <button class = "btn-ver-mas">[ Ver más ]</button>
+                <button class = "btn-ver-mas">[Ver más]</button>
             </article>
 
             <article class="card">
@@ -92,7 +153,17 @@
                 <img src="images/pucara.jfif" class="img-card">
                
                 <p class="oculto">Cruzando el puente de hierro <a href="https://share.google/YmcrCHyrTNvQQkcR5" target="_blank">Más info</a></p>
-                <button class = "btn-ver-mas">[ Ver más ]</button>
+                <button class = "btn-ver-mas">[Ver más]</button>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3>Garganta de Diablo</h3>
+                </header>
+                <img src="images/cascada-garganta-del-diablo.jpg" class="img-card">
+               
+                <p class="oculto"> <a href=" " target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[Ver más]</button>
             </article>
         
             <article class="card">
@@ -102,8 +173,19 @@
                 <img src="images/hornocal huma.jpg" class="img-card">
                
                 <p class="oculto">A 2 horas al norte de Tilcara <a href=" " target="_blank">Más info</a></p>
-                <button class = "btn-ver-mas">[ Ver más ]</button>
+                <button class = "btn-ver-mas">[Ver más]</button>
             </article>
+
+            <article class="card">
+                <header>
+                    <h3>Quebrada de las Señoritas</h3>
+                </header>
+                <img src="images/quebrada de las señoritas1.jpg" class="img-card">
+               
+                <p class="oculto"> <a href=" " target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[Ver más]</button>
+            </article>
+
             <article class="card">
                 <header>
                     <h3>Tren Solar de La Quebrada</h3>
@@ -116,42 +198,9 @@
         </section>
         <hr>
 
+        <h2 id="Museos">Museos</h2>
         <section class="seccion-cards">
-            <h2 id="Gastronomía">Gastronomía</h2>
-            <article class="card">
-                <header>
-                    <h3>Bien Me Sabe</h3>
-                </header>
-                <img src="images/bien me sabe.jpg" class="img-card">
-                
-                <p class="oculto">Ubicado en calle Lavalle 655. <a href=" " target="_blank">Más info</a></p>
-                <button class = "btn-ver-mas">[ Ver más ]</button>
-            </article>  
             
-            <article class="card">
-                <header>
-                    <h3>Restaurante Azul</h3>
-                </header>
-                <img src="images/restaurante azul.jpg" class="img-card">
-                
-                <p class="oculto">Ubicado en calle Lavalle 486. <a href=" " target="_blank">Más info</a></p>
-                <button class = "btn-ver-mas">[ Ver más ]</button>
-            </article>
-
-            <article class="card">
-                <header>
-                    <h3>El Nuevo Progreso</h3>
-                </header>
-                <img src="images/nuevo progreso.jpg" class="img-card">
-                
-                <p class="oculto"> Ubicado en esquina Belgrano y Bolivar. <a href=" " target="_blank">Más info</a></p>
-                <button class = "btn-ver-mas">[ Ver más ]</button>
-            </article>
-        </section>
-        <hr>
-
-        <section class="seccion-cards">
-            <h2 id="Museos">Museos</h2>
             <article class="card">
                 <header>
                     <h3>Museo Terry</h3>
@@ -159,7 +208,7 @@
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvr4yLIKdSvFVeOpNYWz_eSliHfCvIXSfrZyQh24j9kw&s=10" class="img-card">
                 
                 <p class="oculto">Se encuentra ubicado en la calle Rivadavia 352, de la ciudad de Tilcara, provincia de Jujuy. <a href="https://share.google/e3mazhZTyS2KiIU5H" target="_blank">Más info</a></p>
-                <button class = "btn-ver-mas">[ Ver más ]</button>
+                <button class = "btn-ver-mas">[Ver más]</button>
             </article>  
             
             <article class="card">
@@ -169,7 +218,17 @@
                 <img src="https://pueblosoriginarios.com/sur/andina/noa/museos/casanova/archivos/museo.jpg" class="img-card">
                 
                 <p class="oculto"> Ubicado frente a la Plaza en el centro de Tilcara. <a href="https://share.google/zRqTsq91woTtlvODh" target="_blank">Más info</a></p>
-                <button class = "btn-ver-mas">[ Ver más ]</button>
+                <button class = "btn-ver-mas">[Ver más]</button>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3>Museo Soto Avendaño</h3>
+                </header>
+                <img src="images/museo soto avendaño.jfif" class="img-card">
+                
+                <p class="oculto">  <a href="https://share.google/zRqTsq91woTtlvODh" target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[Ver más]</button>
             </article>
 
             <article class="card">
@@ -179,12 +238,122 @@
                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/a4/50/3c/frente-del-museo.jpg?w=1200&h=1200&s=1" class="img-card">
                 
                 <p class="oculto"> Ubicado en esquina Belgrano y Bolivar. <a href="https://share.google/LyvH3YzcU5RCOvYpi" target="_blank">Más info</a></p>
-                <button class = "btn-ver-mas">[ Ver más ]</button>
+                <button class = "btn-ver-mas">[Ver más]</button>
             </article>
         </section>
         <hr>
 
+        <h2 id="Gastronomía">Gastronomía</h2>
+        <section class="seccion-cards">
+            
+            <article class="card">
+                <header>
+                    <h3>Los Puestos</h3>
+                </header>
+                <img src="images/los puestos.jpg" class="img-card">
+                
+                <p class="oculto"> Ubicado en esquina Belgrano y Bolivar. <a href=" " target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[Ver más]</button>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3>Bien Me Sabe</h3>
+                </header>
+                <img src="images/bien me sabe.jpg" class="img-card">
+                
+                <p class="oculto"> <a href=" " target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[Ver más]</button>
+            </article>  
+            
+            <article class="card">
+                <header>
+                    <h3>Restaurante Azul</h3>
+                </header>
+                <img src="images/restaurante azul.jpg" class="img-card">
+                
+                <p class="oculto">Ubicado en calle Lavalle 486. <a href=" " target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[Ver más]</button>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3>El Nuevo Progreso</h3>
+                </header>
+                <img src="images/nuevo progreso.jpg" class="img-card">
+                
+                <p class="oculto"> Ubicado en esquina Belgrano y Bolivar. <a href=" " target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[Ver más]</button>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3>La Pea de Chuspita</h3>
+                </header>
+                <img src="images/la peña de chuspita.jpg" class="img-card">
+                
+                <p class="oculto"> <a href=" " target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[Ver más]</button>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3>El Molle</h3>
+                </header>
+                <img src="images/el molle.jfif" class="img-card">
+                
+                <p class="oculto"> <a href=" " target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[Ver más]</button>
+            </article>
+        </section>
+        <hr>
+        
+        <h2 id="Viñedos">Viñedos</h2>
+        <section class="seccion-cards">
+            
+            <article class="card">
+                <header>
+                    <h3>Huichaira Vineyards</h3>
+                </header>
+                <img src="images/viñedo_huchaira-vineyard.jpg" class="img-card">
+                
+                <p class="oculto">Se encuentra ubicado en la calle Rivadavia 352, de la ciudad de Tilcara, provincia de Jujuy. <a href="https://share.google/e3mazhZTyS2KiIU5H" target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[Ver más]</button>
+            </article>  
+            
+            <article class="card">
+                <header>
+                    <h3>Viñas del Perchel</h3>
+                </header>
+                <img src="images/viñedo_viñas-del-perchel.jpg" class="img-card">
+                
+                <p class="oculto"> Ubicado frente a la Plaza en el centro de Tilcara. <a href="https://share.google/zRqTsq91woTtlvODh" target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[Ver más]</button>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3>Yacoraite</h3>
+                </header>
+                <img src="images/viñedo_yacoraite.jpg" class="img-card">
+                
+                <p class="oculto"> Ubicado en esquina Belgrano y Bolivar. <a href="https://share.google/LyvH3YzcU5RCOvYpi" target="_blank">Más info</a></p>
+                <button class = "btn-ver-mas">[Ver más]</button>
+            </article>
+
+            
+        </section>
+        <hr>
+        <section id="Oficina_de_Información_Turistica">
+            <h2>Oficina de Información Turística</h2>
+            <ul>
+                <li>Dirección: <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiwwZTk6qmXAxUAAAAAHQAAAAAQHQ..i&rlz=1C1ONGR_enAR1185AR1185&sca_esv=f15b6346d67b4a35&udm&fvr=1&pvq=Cg0vZy8xMWI4MDcyenNmIigKIm9maWNpbmEgZGUgaW5mb3JtYWNpw7NuIHR1csOtc3RpY2EQAhgDiQF0oOwqo2KpCQ&lqi=CjBvZmljaW5hIGRlIGluZm9ybWFjacOzbiB0dXLDrXN0aWNhIHRpbGNhcmEganVqdXlIjfbFg6CqgIAIWk4QABABEAIQAxgBGAMYBBgFIjBvZmljaW5hIGRlIGluZm9ybWFjacOzbiB0dXLDrXN0aWNhIHRpbGNhcmEganVqdXkqCggCEAAQARACEAOSARp0b3VyaXN0X2luZm9ybWF0aW9uX2NlbnRlcpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSU2QzVTNOMDlCRUFF-gEECAAQRg&cs=1&um=1&ie=UTF-8&fb=1&gl=ar&sa=X&ftid=0x9404cb42651ca483:0x9a962a32aeca074" target="_blank">Belgrano 366, Y4624 Tilcara, Jujuy</a></li>
+                <li>Teléfono: <a href="https://www.google.com/search?q=secretaria+de+turismo+tilcara&rlz=1C1ONGR_enAR1185AR1185&sca_esv=f15b6346d67b4a35&biw=1366&bih=607&sxsrf=APpeQnuj46cnZZRj_Bf0GSINjji-npE6jA%3A1791442342939&ei=pj3Hao_0OO6A5OUPkOXMwA8&gs_ssp=eJwFwU0KgCAQBlDaBh0hcNG-UacfO0K3-JwshCJQg-j0vVc3_dFr7WeazJd3qpaOXsfE4tmMgxbwbBd6HdxoYA2CgCZe2xwkhYIUobagypNivm5V4ilI-AHcohml&oq=secre&gs_lp=Egxnd3Mtd2l6LXNlcnAiBXNlY3JlKhAIABiABBiKBRhDGMcBGK8BMhAQLhiABBiKBRhDGMcBGK8BMhMQLhiABBiKBRhDGLQHGMcBGK8BMgoQABiABBiKBRhDMgoQABiABBiKBRhDMhAQLhiABBiKBRhDGMcBGK8BMgoQABiABBiKBRhDMgoQLhiABBiKBRhDMgoQABiABBiKBRhDMgoQABiABBiKBRhDMg0QABiABBiKBRhDGLEDSKoiUIMGWNQZcAV4AJABAJgBrAGgAcwHqgEDMS43uAEByAEA-AEBmAIMoAKzCMICChAAGEcY1gQYsAPCAgQQIxgnwgIIEAAYgAQYsQPCAg4QLhiABBiKBRixAxiDAcICDhAuGIAEGLEDGMcBGNEDwgIOEAAYgAQYigUYsQMYgwHCAg0QIxiiBxieBhjwBRgnwgIWEC4YgAQYigUYQxixAxiDARjHARjRA8ICEBAAGIAEGIoFGEMYsQMYgwHCAgQQABgDwgITEC4YgAQYigUYQxixAxjHARjRA8ICFBAuGIAEGIoFGLEDGIMBGMcBGNEDwgILEC4YgAQYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICBxAjGPAFGCfCAg0QABiABBiKBRhDGLQHwgIKECMYyQIY8AUYJ8ICDhAuGIAEGMcBGK8BGI4FmAMAiAYBkAYIkgcDNS43oAfLd7IHAzAuN7gHjAjCBwcyLTUuNC4zyAeQAYAIAQ&sclient=gws-wiz-serp#:~:text=Tel%C3%A9fono%3A-,0388%20464%2D6181,-Horario%3A" target="_blank">388 464-6181</a></li>
+            </ul> 
+        </section>
+
         <form id="formulario">
+            <h2>Dejanos tu comentario:</h2>
                 <label for="nombre">Nombre: </label>
                 <input type="text" id="nombre" placeholder="Juan Pérez"></input>
 
@@ -202,19 +371,9 @@
 
                 <p id="resultado"></p>
                 <p id="infoedad"></p>
-
         </form>
-
-        <section>
-            <h3 id="Teléfonos útiles">Teléfonos útiles</h3>    
-            <ul>
-                <li>Hospital: 123</li>
-                <li>Policia: 123</li>
-                <li>Oficina de Información Turistica: 123</li>
-            </ul> 
-        </section>
-
+        
         <footer>Monoambiente Tilcara - Tilcara, Jujuy 2026</footer>
-    </main>    
+    <!-- </main>     -->
 </body>
 </html>

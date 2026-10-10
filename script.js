@@ -5,9 +5,9 @@ function alternarInformacion(event) {
     const infoExtra = boton.previousElementSibling;
     infoExtra.classList.toggle('oculto');
     if (infoExtra.classList.contains('oculto')){
-        boton.textContent = '[ Ver más ]';
+        boton.textContent = '[Ver más]';
     } else {
-        boton.textContent = '[ Ver menos ]';
+        boton.textContent = '[Ver menos]';
     }
 }
 
@@ -86,12 +86,88 @@ formulario.addEventListener("submit", function(event){
 
 //Entrega 4 parte 4 (Modo oscuro)
 
+const toggleBtnNav = document.getElementById("theme-toggle-nav");
 const toggleBtn = document.getElementById("theme-toggle");
 
 toggleBtn.addEventListener("click", function() {
     document.body.classList.toggle("dark-mode");
     if(document.body.classList.contains("dark-mode")){
-        toggleBtn.textContent = "Cambiar a Modo Claro";}
-    else{
-        toggleBtn.textContent = "Cambiar a Modo Oscuro";}
+        toggleBtn.innerHTML = '<img src="images/light_mode.svg" style="width: 100%; height: 100%;" alt="Modo Claro">';
+    } else {
+        toggleBtn.innerHTML = '<img src="images/dark_mode.svg" style="width: 100%; height: 100%;" alt="Modo Oscuro">';
+    }
 });
+
+toggleBtnNav.addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+    if(document.body.classList.contains("dark-mode")){
+        toggleBtnNav.innerHTML = '<img src="images/light_mode.svg" style="width: 100%; height: 100%;" alt="Modo Claro">';
+    } else {
+        toggleBtnNav.innerHTML = '<img src="images/dark_mode.svg" style="width: 100%; height: 100%;" alt="Modo Oscuro">';
+    }
+});
+
+//Entrega 3 ejercicio 2 (boton vovler arriba)
+
+const btn = document.getElementById("volverArriba");
+const btnNav = document.getElementById("theme-toggle");
+
+
+window.addEventListener("scroll",function(){
+    if (window.scrollY > 300){
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+});
+
+
+btn.addEventListener("click",function(){
+    window.scrollTo({
+        top:0,
+        behavior: "smooth"
+    });
+});
+
+
+//Entrega 3 ejercicio 3 (Carrousel)
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const carrouselContainer = document.getElementById('carrousel');
+
+let currentSlide = 0;
+let autoSlideInterval;
+
+//Funcion para mostrar un slide especifico
+function showSlide(index) {
+    if (slides.length === 0) return;
+
+    if (index >= slides.length) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = slides.length - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    //Quitar la clase active de todos los slides
+    slides.forEach(slide => slide.classList.remove('active'));
+
+    //Activar el slide
+    slides[currentSlide].classList.add('active');
+}
+
+// Avanzar al siguiente slide
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+//Avanzar al anterior
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+// Event Listeners para botones de navegarción
+if (nextBtn) nextBtn.addEventListener('click',nextSlide);
+if (prevBtn) prevBtn.addEventListener('click',prevSlide);
