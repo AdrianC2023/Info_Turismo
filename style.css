@@ -38,6 +38,22 @@ header{
     grid-auto-flow: column;
     align-items: center;
     background-color: rgb(134, 90, 24);
+    position: relative;
+}
+
+#titulo-pricipal{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+
+}
+
+#titulo-pricipal h1{
+  align-items: center;
+    text-align: center;
+    width: 100%;
+
 }
 #titulo{
     color: rgb(202, 175, 162);
@@ -47,13 +63,13 @@ header{
     font-weight: weight;
     font-style: normal;
     text-align: center;
+
     /* background-color: rgb(146, 85, 6); */
     margin: 0px;
 }
 .img-principal {
     width: 100%;
-    height: 100
-    %;
+    height: 100%;
     margin-bottom: 0%;
 
 }
@@ -277,6 +293,7 @@ textarea{
     position: fixed;
     right: 40px;
     cursor: pointer;
+    z-index: 10;
 }
 
 button{

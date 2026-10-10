@@ -116,8 +116,10 @@ const btnNav = document.getElementById("theme-toggle");
 window.addEventListener("scroll",function(){
     if (window.scrollY > 300){
         btn.style.display = "block";
+        btnNav.style.display = "block";
     } else {
         btn.style.display = "none";
+        btnNav.style.display = "none";
     }
 });
 
