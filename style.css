@@ -91,7 +91,7 @@ header{
 }
 .nav-links{
     display: flex;
-    gap: 100px;
+    gap: 2rem;
     list-style: none;
     justify-content: space-between;
     padding-left: 0px;
@@ -448,8 +448,8 @@ footer{
     background-image: url('images/full-monumento.jpg');
     background-attachment: fixed;
     background-size: cover;
-    /* background-position: center; */
-    height: 55vh;
+    background-position: center;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
