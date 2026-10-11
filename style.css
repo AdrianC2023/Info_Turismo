@@ -45,6 +45,7 @@ header{
     align-items: center;
     text-align: center;
     width: 100%;
+    padding: 0px 0px 0px 180px;
 
 
 }
@@ -323,6 +324,7 @@ button{
     font-size: 16px;
     color: rgb(22, 21, 21);
     font-family: var(--font-principal);
+    z-index: 10;
 }
 
 footer{
@@ -446,8 +448,8 @@ footer{
     background-image: url('images/full-monumento.jpg');
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
-    height: 50vh;
+    /* background-position: center; */
+    height: 55vh;
     display: flex;
     justify-content: center;
     align-items: center;

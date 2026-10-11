@@ -1,5 +1,6 @@
 const botonesVerMas = document.querySelectorAll('.btn-ver-mas');
 
+
 function alternarInformacion(event) {
     const boton = event.target;
     const infoExtra = boton.previousElementSibling;
